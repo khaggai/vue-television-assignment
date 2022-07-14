@@ -1,0 +1,46 @@
+#app{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+#casing{
+        width: 400px;
+        height: 370px;
+        background-color: black;
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+}
+.screen{
+        width: 350px;
+        height: 300px;
+        background-color: cadetblue;
+        border-radius: 10px;
+        margin: 10px 0px 5px 25px;
+        padding-top: 5px;
+}
+#screen-off{
+        background-color: rgb(105, 100, 100);
+}
+button{
+        color: blue;
+        background-color: azure;
+        width: 30px;
+        height: 30px;
+}
+img{
+        width: 340px;
+        height: 290px;
+}
+
+.img-btn{
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        border-radius: 20px;
+}
+#power{
+        float: right;
+        margin-right: 40px;
+        background: black;
+}

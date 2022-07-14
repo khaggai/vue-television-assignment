@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Television App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <div id="app" class="center">
+             <div v-if="on == true" id="casing">
+                <div id="screen-off" class="screen">
+                </div>
+                <div>
+                    <button> << </button>
+                    <button> >> </button>
+                    <button v-on:click="switch_on_off" id="power">
+                        <img class="img-btn" src="./images/power_button.jpg" alt="">
+                    </button>
+                </div>
+            </div>
+            
+            <div v-else id="casing">
+                <div id="screen-on" class="screen">
+                    <img v-if="currChannel==1" id="img-screen" src="./images/cartoon.gif" alt="">
+                    <img v-else-if="currChannel==2" id="img-screen" src="./images/junior-code-smoker.gif" alt="">
+                    <img V-else-if="currChannel==3" id="img-screen" src="./images/flying-bird.gif" alt="">
+                    <img V-else-if="currChannel==4" id="img-screen" src="./images/code-smoker.gif" alt="">
+                </div>
+                <div>
+                    <button v-on:click="prevChannel" > << </button>
+                    <button v-on:click="nextChannel"> >> </button>
+                    <button v-on:click="switch_on_off" id="power">
+                        <img class="img-btn" src= "./images/power_button.jpg" alt="">
+                    </button>
+                </div>
+            </div>
+       </div>
+        <script src="vue.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
